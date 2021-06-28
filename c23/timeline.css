@@ -1,0 +1,70 @@
+body{
+    background-image: url("https://www.fda.gov/files/Coronavirus_3D_illustration_by_CDC_1600x900.png");
+    background-size: 100% 100%;
+}
+.container  ul{
+    display:flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.container ul li a{
+    color:white;
+    font-size: 2rem;
+}
+.container ul li a:hover{
+    color:teal;
+    text-decoration: none;
+    background-color: black;
+    padding:10px;
+    border-radius: 10px;
+}
+.content{
+    width: 80%;
+    margin:auto;
+    color: brown;
+    text-align: center;
+    text-transform: uppercase;
+    background-image: linear-gradient(rgba(120,10,50,.5),rgba(10,210,100,.5));
+    padding: 20px;
+    margin-top: 100px;
+}
+.timeline ul{
+    list-style-type: none;
+    padding:  50px 0px;
+}
+.timeline ul li{
+    width: 6px;
+    background-color: blanchedalmond;
+    margin:auto;
+    padding-top: 50px ;
+    position: relative;
+}
+.timeline  ul li div{
+position: relative;
+width: 400px;
+padding: 10px ;
+background-color: brown;
+}
+time{
+    display: block ;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: cornsilk;
+}
+.timeline ul li div{
+   
+    transition: all 2s ease-in-out;
+}
+.timeline ul li.in-view div{
+transform: none;
+color: red;
+transform: translate(0px,0px);
+}
+.timeline ul li:nth-child(odd) div{
+    left: 45px;
+    transform: translate(200px,0px);
+}
+.timeline ul li:nth-child(even) div{
+    left: -430px;
+    transform: translate(-200px,0px);
+}
